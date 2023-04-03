@@ -110,7 +110,7 @@ const call = () =>{
     //logic part for Gender
      var sirname = ''
 
-     if(G == "Femail")
+     if(G == "Female")
      {
         sirname = "Ms"
      }
