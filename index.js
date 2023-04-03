@@ -125,7 +125,7 @@ const call = () =>{
     var Tab = `<table border='1' cellpadding='1' padding='1' cellspacing='5' width="50%">`
     Tab += `<tr><th><img src='${ipic}' width='50' ></th></tr>`
     Tab += `<tr><td><b>Student Name</b></td><td><b>${sirname}.${SN}</b></td></tr>`
-    Tab += `<tr><td><b>Father Name</b></td><td><b>.${FN}</b></td></tr>`
+    Tab += `<tr><td><b>Father Name</b></td><td><b>MR.${FN}</b></td></tr>`
     Tab += `<tr><td><b>Roll numebr</b></td><td><b>${RN}</b></td></tr>`
     Tab += `<tr><td><b>School name</b></td><td><b>${SS}</b></td></tr>`
     Tab += `<tr><td><b>Gender</b></td><td><b>${G}</b></td></tr>`
