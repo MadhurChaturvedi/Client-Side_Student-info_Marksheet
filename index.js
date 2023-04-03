@@ -3,11 +3,13 @@ const call = () =>{
     var i = Gender.selectedIndex;
 
     //😊😊😊 declaration
-    var SN = sn.value
-    var FN = fn.value
-    var RN = rn.value
-    var SS = ss.value
+    var SN = sn.value.toUpperCase();
+    var FN = fn.value.toUpperCase();
+    var RN = rn.value.toUpperCase();
+    var SS = ss.value.toUpperCase();
     var G = Gender.options[i].text
+
+    
 
     // console.log( SN+FN+RN+SS + G)
 
@@ -26,12 +28,12 @@ const call = () =>{
      var Pred = ''
      if(Physics>=35)
      {
-        Ppass="Pass"
+        Ppass=" Pass"
         Pred = '#1abc9c'
      } 
-     else
+     else 
      {
-        Ppass="Fail"
+        Ppass=" Fail"
         Pred = 'red'
      }
      
@@ -40,13 +42,13 @@ const call = () =>{
     var Mred = ''
     if(Mathematics>=35)
     {
-      Mpass="Pass"
+      Mpass=" Pass"
       Mred='#1abc9c'
       
     }
     else
     {
-       Mpass="Fail"
+       Mpass=" Fail"
        Mred = 'red'
     }
 
@@ -55,14 +57,14 @@ const call = () =>{
     var Cred = ''
     if(Chemistry>=35)
     {
-      Cpass="Pass"
+      Cpass=" Pass"
       Cred='#1abc9c'
       
       
     }
     else
     {
-      Cpass="Fail"
+      Cpass=" Fail"
       Cred = 'red'
     }
     
@@ -71,14 +73,14 @@ const call = () =>{
     var Ered = ''
     if(English>=35)
     {
-      Epass="Pass"
+      Epass=" Pass"
       Ered='#1abc9c'
       
       
     }
     else
     {
-      Epass="Fail"
+      Epass=" Fail"
       Ered='red'
     }
 
@@ -92,11 +94,11 @@ const call = () =>{
    
     else if(Avg>=46 && 59>=Avg )
     {
-      Grade = "C😫"
+      Grade = "C 😫"
     }
     else if(Avg>=60 && 70>=Avg )
     {
-      Grade = "B🤞😌"
+      Grade = "B 🤞😌"
     }
     else if(Avg>=70 && 85>=Avg )
     {
@@ -106,27 +108,34 @@ const call = () =>{
     {
       Grade = "A++ ✌😁"
     }
+    else
+    {
+      Grade = "Fail 😫😫"
+    }
     
     //logic part for Gender
      var sirname = ''
 
-     if(G == "Femail")
+     if(G == "Female")
      {
-        sirname = "Ms"
+        sirname = "Mr"
      }
      else{
 
-       sirname = "Mr"
+       sirname = "Mr."
      }
     
+     
+
+
     //picture logic 
      var ipic = `${G}.png`
 
     var Tab = `<table border='1' cellpadding='1' padding='1' cellspacing='5' width="50%">`
-    Tab += `<tr><th><img src='${ipic}' width='50' ></th></tr>`
-    Tab += `<tr><td><b>Student Name</b></td><td><b>${sirname}.${SN}</b></td></tr>`
-    Tab += `<tr><td><b>Father Name</b></td><td><b>.${FN}</b></td></tr>`
-    Tab += `<tr><td><b>Roll numebr</b></td><td><b>${RN}</b></td></tr>`
+    Tab += `<tr><th><img src='${ipic}' width='50' margin='2'></th></tr>`
+    Tab += `<tr><td><b>Student Name</b></td><td><b>${sirname} ${SN}</b></td></tr>`
+    Tab += `<tr><td><b>Father Name</b></td><td><b>Mr. ${FN}</b></td></tr>`
+    Tab += `<tr><td><b>Roll numeber</b></td><td><b>${RN}</b></td></tr>`
     Tab += `<tr><td><b>School name</b></td><td><b>${SS}</b></td></tr>`
     Tab += `<tr><td><b>Gender</b></td><td><b>${G}</b></td></tr>`
     Tab += `<tr><td><b>Mathematics</b></td><td style="color:#FFF"  bgcolor='${Mred}'><b>${Mathematics}${Mpass}</b></td></tr>`
