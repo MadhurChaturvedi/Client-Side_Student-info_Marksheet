@@ -1,0 +1,14 @@
+Student info
+
+rollno
+name 
+gender
+father name
+school name
+hindi marks
+english marks
+physic marks
+chemistry makrs
+math makrs
+submmit button
+div = result
