@@ -17,4 +17,6 @@
 </div>
 
 <p>Cmake this wiht logic in vanila javascript </p>
+<p>in this little project tech me how to make a write a login in javascript with the Document Object Model </p>
+
   
